@@ -30,7 +30,7 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 const addExclamation = (arr) => {
   // Solution code here...
   const newStrings = [];
-  arr.forEach( str => {
+  arr.forEach( str=> {
     newStrings.push(`${str}!`);
   });
   return newStrings;
@@ -47,7 +47,7 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 const allUpperCase = (arr) => {
   // Solution code here...
   const upperCaseArray = [];
-  arr.forEach( str => upperCaseArray.push(str.toUpperCase());
+  arr.forEach( str => upperCaseArray.push(str.toUpperCase()));
   //   {
   //   let upperCase = str.toUpperCase();
   //   upperCaseArray.push(upperCase);
@@ -69,7 +69,11 @@ const greeting = (word) => `${word.toUpperCase()}!`;
 
 const speaker = (words, callback) => {
   // Solution code here...
-    const answer = (words, callback) => 
+  const answer = [];
+  words.forEach( (word) => {
+    answer.push(callback(word)); 
+  });
+  return answer;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,7 +96,7 @@ const addValues = (arr, value) => arr.push(value);
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  for (let i=0; i < times; i++) {
+  for (let i = 0; i < times; i++) {
     callback(arr, num);
   }
   return arr;
@@ -120,10 +124,10 @@ const createList = (availableItems) => {
   // Solution code here...
   const groceryList = [];
   // for each loop on each item using avail
-  availableItems.forEach((item => {
+  availableItems.forEach((element) => {
     // if statement to check item avail. if true push in new array
-    if(item.available === true) {
-      groceryList.push(item.name);
+    if(element.available === true) {
+      groceryList.push(element.name);
     }
   });
   return groceryList;
