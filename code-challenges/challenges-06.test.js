@@ -24,7 +24,7 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-  return arr.map((obj) => obj.name.split('').reverse().join(''));
+  return arr.map(person => person['name'].split('').reverse().join(''));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,7 +111,7 @@ console.log(a) prints [1, 2, 3, 4]
 
 const append = (arr1, arr2) => {
   // Solution code here...
-
+  arr2.forEach(elt => arr1.push(elt));
 };
 
 /* ------------------------------------------------------------------------------------------------
