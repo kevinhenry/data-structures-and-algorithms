@@ -118,14 +118,9 @@ const characters = [
   },
 ];
 
-const getHouses = (arr) => {
-  let houses = [];
-  Object.values(arr).forEach(character => {
-    houses.push(character.house);
-  });
-  // Solution code here...
-  return houses;
-};
+const getHouses = (arr) => arr.map(character => character.house);
+// Solution code here...
+// };
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -140,15 +135,17 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
+  // let obj = arr.find(element => element.name === character);
+  // return obj && obj.children && obj.children.length;
   // Solution code here...
-  let children = false;
-  arr.forEach(element => {
-    let newArr = Object.values(element);
-    if (newArr[0] === character && arr[2] !== []){
-      children = true;
+  for(let obj of arr) {
+    if(Object.values(obj).includes(character)) {
+      // it's the character we're loking for!
+      return obj.children && obj.children.length;
     }
-  });
-  return children;
+  }
+  // if the character didn't exiost, just return false
+  return false;
 };
 
 /* ------------------------------------------------------------------------------------------------
