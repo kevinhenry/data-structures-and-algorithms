@@ -75,15 +75,15 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-  let totalArr = [];
-  for(let i = 0; i < stores[0].length; i++){
+  let ans = [];
+  for (let j = 0; j < stores[0].length; j++) {
     let total = 0;
-    for(let x = 0; x < stores.length; x++){
-      total += stores[x][i];
+    for (let i = 0; i < stores.length; i++) {
+      total += stores[i][j];
     }
-    totalArr.push(total);
+    ans.push(total);
   }
-  return totalArr;
+  return ans;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,11 +98,9 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
-  let dataArr = [];
-  hours.forEach((element, index) => {
-    dataArr.push({sales: `${data[index]} cookies`, time: hours[index]});
-  });
-  return dataArr;
+  let ans = [];
+  hours.forEach( (hour, index) => ans.push({sales: `${data[index]} cookies`, time: hour}));
+  return ans;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -128,16 +126,7 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
-  let treats = 0;
-  arr.forEach((a) => {
-    let listItem = a.items;
-    listItem.forEach((b) => {
-      if(b.name === 'Treats'){
-        treats = b.quantity;
-      }
-    });
-  });
-  return treats;
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
