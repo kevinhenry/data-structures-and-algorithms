@@ -41,21 +41,12 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-  // return input.map(x => x.reduce((acc, elem) => {
-  //   (target === elem) ? acc +1: acc;
-  // },0)
-  // ;
-
-  // Worked with Kassie, Garfield, and Alex on this trying to work use reduce. Will revisit.
-  let array = [];
-  input.map((i) => {
-    i.map((j) => {
-      if(j === target){
-        array.push(1);
-      }
-    });
-  });
-  return array.length;
+  return input.reduce(
+    (answerSoFar, innerArr) =>
+    // filter inner arr to just 5s, get length, add to answer
+      innerArr.filter(x => x === target).length + answerSoFar,
+    0
+  );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -93,12 +84,9 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
-  let array = [];
-  for (let i = 0; i < input.length; i++) {
-    let innerArray = input[i];
-    array.push(innerArray.filter(number => ((number % 5 === 0) && typeof(number) === 'number')).map(number => Math.pow(2, number)));
-  }
-  return array;
+  return input.map(arr =>
+    arr.filter(x => ((typeof x) === 'number') && (x % 5 === 0))
+      .map(x => Math.pow(2, x)));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -176,8 +164,7 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
-  let result = data.filter( character => character.height).reduce((a, b) => (b.height > a.height ? b : a));
-  return result.name;
+  return data.reduce((a,b) => Number(a.height) < Number(b.height) ? a : b).name;
 };
 
 /* ------------------------------------------------------------------------------------------------
