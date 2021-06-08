@@ -34,7 +34,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ### Whiteboard Visual
 ***[Your Whiteboard Image]***
-![Image 1](python/code_challenges/img/Whiteboard Challenge - Code Challenge 1.jpg)
+![array-reverse](python/code_challenges/img/array-reverse.jpg)
 
 
 ---
