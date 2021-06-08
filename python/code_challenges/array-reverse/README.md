@@ -1,7 +1,7 @@
 # Daily Code Challenge README Example
 
 ## Array-Reverse
-*Author: Kevin Henry*
+*Author: Kevin Henry with Michael Ryan*
 
 ---
 
