@@ -33,8 +33,8 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 
 ### Whiteboard Visual
-***[Your Whiteboard Image]***
-![array-reverse](python/code_challenges/img/array-reverse.jpg)
+***[Array-Reverse]***
+![array-reverse](https://github.com/kevinhenry/data-structures-and-algorithms/blob/f83ca2f21ec33f3996890f06cab94f64d2e7b942/python/code_challenges/img/array-reverse.jpg)
 
 
 ---
