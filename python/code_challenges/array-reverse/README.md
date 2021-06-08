@@ -1,7 +1,7 @@
 # Daily Code Challenge README Example
 
 ## Array-Reverse
-*Author: Kevin Henry*
+*Author: Kevin Henry with Michael Ryan*
 
 ---
 
@@ -33,7 +33,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 
 ### Whiteboard Visual
-***[Your Whiteboard Image]***
+***[Array-Reverse]***
 ![array-reverse](python/code_challenges/img/array-reverse.jpg)
 
 
