@@ -17,9 +17,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 | Input | Expected Output |
 |-----------|-----------|
 | [2, 4, 6, -8], 5 | [2, 4, 5, 6, -8] |
-|------------|----------|
 | [42, 8, 15, 23, 42], 16 | [42, 8, 15, 16, 23, 42] |
-|------------|-------------|
 
 ---
 
@@ -35,8 +33,8 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 
 ### Whiteboard Visual
-***[Array-Reverse]***
-![array-reverse](python/code_challenges/img/array-shift.jpg)
+***[Array-shift]***
+![array-shift](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/array-shift.jpg)
 
 
 ---
