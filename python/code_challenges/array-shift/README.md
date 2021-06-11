@@ -35,8 +35,8 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 
 ### Whiteboard Visual
-***[Array-Reverse]***
-![array-reverse](python/code_challenges/img/array-shift.jpg)
+***[Array-shift]***
+![array-shift](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/array-shift.jpg)
 
 
 ---
