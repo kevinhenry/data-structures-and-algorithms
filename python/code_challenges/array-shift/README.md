@@ -1,23 +1,25 @@
 # Daily Code Challenge README Example
 
-## Array-Reverse
-*Author: Kevin Henry with Michael Ryan*
+## Array-Shift
+*Author: Kevin Henry with Anthony Williams*
 
 ---
 
 ### Problem Domain
 ***[Problem Domain for the Code Challenge]***
 
-Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
 ---
 
 ### Inputs and Expected Outputs
 
 | Input | Expected Output |
-| :----------- | :----------- |
-| [1, 2, 3 , 4, 5 , 6] | [6, 5, 4, 3, 2, 1] |
-
+|-----------|-----------|
+| [2, 4, 6, -8], 5 | [2, 4, 5, 6, -8] |
+|------------|----------|
+| [42, 8, 15, 23, 42], 16 | [42, 8, 15, 16, 23, 42] |
+|------------|-------------|
 
 ---
 
@@ -34,7 +36,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ### Whiteboard Visual
 ***[Array-Reverse]***
-![array-reverse](https://github.com/kevinhenry/data-structures-and-algorithms/blob/f83ca2f21ec33f3996890f06cab94f64d2e7b942/python/code_challenges/img/array-reverse.jpg)
+![array-reverse](python/code_challenges/img/array-shift.jpg)
 
 
 ---
