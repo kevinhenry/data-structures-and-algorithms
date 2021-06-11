@@ -28,14 +28,11 @@ Write a function called insertShiftArray which takes in an array and a value to 
 | :----------- | :----------- |
 | O(n) | O(1) |
 
-
 ---
-
 
 ### Whiteboard Visual
 ***[Array-shift]***
 ![array-shift](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/array-shift.jpg)
-
 
 ---
 
