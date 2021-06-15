@@ -43,3 +43,5 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 ---
 
 For more information on Markdown: https://www.markdownguide.org/cheat-sheet
+
+
