@@ -33,7 +33,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ### Whiteboard Visual
 ***[array-binary-search]***
-![array-reverse](https://github.com/python/code_challenges/img/array-binary-search.jpg)
+![array-binary-search](https://github.com/kevinhenry/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/img/array-binary-search.jpg)
 
 ---
 
