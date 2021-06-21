@@ -1,44 +1,35 @@
 # Daily Code Challenge README Example
 
-## array-binary-search
-*Author: Kevin Henry with Anthony Williams and Marie Marcos*
+## Linked List
 
+*Author: Kevin Henry with Anthony Williams
+
+[PR](https://github.com/kevinhenry/data-structures-and-algorithms/pulls)
 ---
 
 ### Problem Domain
+
 ***[Problem Domain for the Code Challenge]***
 
-Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
+- Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+- Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
 
----
+  - Define a method called `insert` which takes any value as an argument and adds a new node with that value to the `head` of the list with an O(1) Time performance.
+  - Define a method called `includes` which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+  - Define a method called `toString` (or `__str__` in Python) which takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
+  - `"{ a } -> { b } -> { c } -> NULL"`
 
-### Inputs and Expected Outputs
 
-| Input | Expected Output |
-| :----------- | :----------- |
-| [4, 8, 15, 16, 23, 42],15 | 2 |
-[-131, -82, 0, 27, 42, 68, 179], 42 | 4 |
-[11, 22, 33, 44, 55, 66, 77], 90 | -1 |
-[1, 2, 3, 5, 6, 7], 4 | -1 |
-
----
-
-### Big O
-
-| Time | Space |
-| :----------- | :----------- |
-| O(n) | O(1) |
-
----
-
-### Whiteboard Visual
-***[array-binary-search]***
-![array-binary-search](https://github.com/kevinhenry/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/img/array-binary-search.jpg)
 
 ---
 
 ### Change Log
+
 ***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***
+
+### Collaboration & Credit
+
+TA assistance with Anthony
 
 ---
 
