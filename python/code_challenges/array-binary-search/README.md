@@ -33,6 +33,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ### Whiteboard Visual
 ***[array-binary-search]***
+
 ![array-binary-search](https://github.com/kevinhenry/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/img/array-binary-search.jpg)
 
 ---
@@ -43,3 +44,5 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 ---
 
 For more information on Markdown: https://www.markdownguide.org/cheat-sheet
+
+
