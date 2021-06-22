@@ -1,76 +1,94 @@
 class Node:
-    def __init__(self, value, next=None):
+    def __init__(self, value=None, next=None):
         self.value = value
         self.next = next
 
 
 class LinkedList:
-    def __init__(self, head=None):
-        self.head = head
+    def __init__(self, node=None):
+        self.head = node
 
     def insert(self, value):
         node = Node(value)
-
-        if self.head is not None:
-            node.next = self.head  # pear -> orange
-            self.head = node  # HEAD: pear -> orange
+        node.next = self.head
+        self.head = node
+        return self
 
     def includes(self, value):
         current = self.head
 
-        while current is not None:
+        while current:
             if current.value == value:
                 return True
             current = current.next
+
         return False
 
-    #
+    def __str__(self):
+        string = ""
+        current = self.head
 
-    #     node = node.next:
+        while current:
+            string += f"{ {current.value} } -> "
+            current = current.next
+        string += f" None "
+        return string
 
-    # return False
+    def append(self, value):
+        new_node = Node(value)
 
-    # pph
+        if self.head is None:
+            self.head = new_node
+            return self
 
-    # computational thinking. takes a massive problem and seperates it down into small little challenges = litte wins.
+        current = self.head
+        while current.next is not None:
+            current = current.next
+        current.next = new_node
+        return self
 
-    # get into the habbit of is doing the write out.
+    def insert_before(self, target, new_value):
+        new_node = Node(new_value)
 
-    # ll2.head.value = pear
-    # ll2.head.next = orange
-    # ll2.head.next.next = apple
+        if self.head is None:
+            return None
 
-    # ll2 pears -> orange -> apple -> None
+        if self.head.value == target:
+            new_node.next = self.head
+            self.head = new_node
+            return self
 
-    # current = 112.head
-    # while current.value  is not None:
-    #     # do something
-    #     current = current.next
+        current = self.head
 
-    # if __name__ == "__main__":
-    #     ll2 = LinkedList()
-    #     ll2.insert('apples')
-    #     ll2.insert('orange')
-    #     ll2.insert('pears')
+        while current is not None:
+            if current.next.value == target:
+                new_node.next = current.next
+                current.next = new_node
+                return self
 
-    # function link list head -> apples? / mope -> apples yet? / nope -> apples yet? / true
-    # if linked list's value becomes none, That is the end of the linked list.
 
-    # while loop - if value is in the linked list, return items, if not ten return None
+            current = current.next
 
-    # ll = LinkedList()
-    # node1 = Node("apples")
-    # node2 = Node("orange")
-    # node3 = Node("pear")
-    # ll.head == node1
-    # node1.next == node2
-    # node2.next == node3
+        print("Target not within list")
 
-    # node1.next == None
+    def insert_after(self, target, new_value):
+        new_node = Node(new_value)
 
-    # llhead = apple -> 'orange' -> 'pear' -> None
+        if self.head is None:
+            return None
 
-    # ll1 = LinkedList(Node("apples", Node("orange", Node("pear"))))
+        current = self.head
 
-    # llhead = apples -> 'orange' -> 'pear' -> None
-    # ll1.next = None
+        while current is not None:
+            if current.value == target:
+                new_node.next = current.next
+                current.next = new_node
+                return self
+
+            current = current.next
+
+        print("Target not within list")
+
+
+if __name__ == "__main__":
+    pass
