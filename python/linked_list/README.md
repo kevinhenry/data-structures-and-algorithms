@@ -4,7 +4,12 @@
 
 *Author: Kevin Henry with Anthony Williams and Prabin Singh
 
+## Linked List kth
+
+*Author: Kevin Henry with Marie Marcos and Davee Sok
+
 [PR](https://github.com/kevinhenry/data-structures-and-algorithms/pulls)
+
 ---
 
 ### Problem Domain
@@ -36,6 +41,13 @@ Extend a Linked List to allow varous insertion methods/
 ***[list-insertions]***
 
 ![list-insertions](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/list-insertions.jpg)
+
+***[linked-list-kth]***
+
+![linkled-list-kth](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/linked-list-kth.jpg)
+
+![linkled-list-kth1](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/linked-list-kth1.jpg)
+
 ---
 
 ### Change Log
