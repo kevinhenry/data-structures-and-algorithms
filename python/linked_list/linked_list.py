@@ -114,5 +114,20 @@ class LinkedList:
 
         return current.value
 
+
+def zip_lists(ll1, ll2):
+    curr_1 = ll1.head
+    curr_2 = ll2.head
+    while curr_1 and curr_2:
+        list_1_next = curr_1.next
+        list_2_next = curr_2.next
+        curr_1.next = curr_2
+        curr_2.next = list_1_next
+        curr_1 = list_1_next
+        curr_2 = list_2_next
+    ll2.head = curr_2
+    return ll1
+
+
     if __name__ == "__main__":
         pass
