@@ -1,4 +1,4 @@
-from linked_list.linked_list import LinkedList, Node
+from linked_list.linked_list import LinkedList, Node, zip_lists
 
 
 def test_node_instance():
@@ -134,4 +134,19 @@ def test_Happy_Path_where_k_is_not_at_the_end_but_somewhere_in_the_middle_of_the
 
     actual = ll1.kth_from_the_end(3)
     expected = "b"
+    assert actual == expected
+
+
+def test_zip_lists():
+    ll1 = LinkedList()
+    ll2 = LinkedList()
+    ll1.append(1)
+    ll1.append(3)
+    ll1.append(2)
+    ll2.append(5)
+    ll2.append(9)
+    ll2.append(4)
+    zipped_list = zip_lists(ll1, ll2)
+    actual = str(zipped_list)
+    expected = "{1} -> {5} -> {3} -> {9} -> {2} -> {4} ->  None "
     assert actual == expected
