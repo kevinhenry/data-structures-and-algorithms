@@ -48,6 +48,10 @@ Extend a Linked List to allow varous insertion methods/
 
 ![linkled-list-kth1](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/linked-list-kth1.jpg)
 
+***[linked-list-zip]***
+
+![linked-list-zip](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/linked-list-zip.jpg)
+
 ---
 
 ### Change Log
