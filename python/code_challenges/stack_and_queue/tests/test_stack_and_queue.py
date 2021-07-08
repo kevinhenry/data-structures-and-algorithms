@@ -1,6 +1,38 @@
 import pytest
 
-from stack_and_queue import Stack, Queue, InvalidOperationError
+from stack_and_queue import Node, Stack, Queue, InvalidOperationError
+
+# test_empty_node
+def test_inst_empty_node():
+    new_node = Node()
+    # actual = node.value
+    # expected = None
+    # assert actual == expected
+    assert new_node
+
+
+# test node single value
+def node_single_value():
+    new_node = Node(5)
+    actual = new_node.value
+    expected = 5
+    assert actual == expected
+
+
+# test node does not = a diff value
+def test_value():
+    new_node = Node(5)
+    actual = new_node.value
+    expected = 6
+    assert actual != expected
+
+
+# create node that value and next - make sure next is expected
+def test_next_value():
+    new_node = Node(5, Node(6))
+    actual = new_node.next.value
+    expected = 6
+    assert actual == expected
 
 
 def test_successfully_push_onto_a_stack():
@@ -40,6 +72,23 @@ def test_succ_empty_stack_after_mult_pops():
     assert actual == expected
 
 
+# def test_succ_empty_stack_after_mult_pops(create_stack):
+#     s = create_stack
+#     s.push(1)
+#     # 1 is top
+#     s.push(2)
+#     # 1 is bottom 2 is top
+#     s.push(3)
+#     # 1 bottom 2 is middle 3 is top
+#     s.pop()
+#     # pop 3 off top, 2 new top
+#     s.pop()
+#     # pop 2 off top, 1 new top
+#     actual = s.head.value
+#     expected = 1
+#     assert actual == expected
+
+
 def test_succ_peek_next_item_stack():
     stack = Stack()
     stack.push("a")
@@ -59,6 +108,21 @@ def test_succ_instantiate_an_empty_stack():
     stack.pop()
     actual = stack.is_empty()
     expected = True
+    assert actual == expected
+
+
+# create a new test insta an empty stack and make sure it exists
+def test_empty_stack():
+    new_stack = Stack()
+    assert new_stack
+
+
+# create a stack and a node, create stack with a node, test the node is at top of stack
+def test_has_a_value():
+    new_stack = Stack()
+    new_stack.push("a")
+    actual = new_stack.top.value
+    expected = "a"
     assert actual == expected
 
 
