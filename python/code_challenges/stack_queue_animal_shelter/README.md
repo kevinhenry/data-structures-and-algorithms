@@ -41,7 +41,7 @@ N/A
 
 ***[stack_queue_animal_shelter]***
 
-![stack_queue_animal_shelter](https://github.com/kevinhenry/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/img/stack-queue-animal-shelter.jpg)
+![stack_queue_animal_shelter](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/stack-queue-animal-shelter.jpg)
 
 ---
 
