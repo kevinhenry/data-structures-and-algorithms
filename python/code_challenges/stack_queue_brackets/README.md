@@ -40,7 +40,7 @@ N/A
 
 ***[stack_queue_brackets]***
 
-![stack_queue_brackets](https://github.com/kevinhenry/data-structures-and-algorithms/blob/python/code_challenges/img/stack_queue_brackets.jpg)
+![stack_queue_brackets](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/stack_queue_brackets.jpg)
 
 ---
 
