@@ -10,13 +10,13 @@
 
 [Array Binary Search](code_challenges/array-binary-search/README.md)
 
-[Linked List](linked_list/README.md)
+[Linked List](code_challenges/linked_list/README.md)
 
-[List Insertions](linked_list/README.md)
+[List Insertions](code_challenges/linked_list/README.md)
 
-[Linked List k-th](linked_list/README.md)
+[Linked List k-th](code_challenges/linked_list/README.md)
 
-[Linked List Zip](linked_list/README.md)
+[Linked List Zip](code_challenges/linked_list/README.md)
 
 [Stack and Queue](code_challenges/stack_and_queue/README.md)
 
