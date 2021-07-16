@@ -16,6 +16,16 @@
 
 [Linked List k-th](linked_list/README.md)
 
+[Linked List Zip](linked_list/README.md)
+
+[Stack and Queue](code_challenges/stack_and_queue/README.md)
+
+[Stack Queue Pseudo](code_challenges/stack_queue_pseudo/README.md)
+
+[Stack Queue Animal Shelter](code_challenges/stack_queue_animal_shelter/README.md)
+
+[Stack Queue Brackets](code_challenges/stack_queue_brackets/README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.

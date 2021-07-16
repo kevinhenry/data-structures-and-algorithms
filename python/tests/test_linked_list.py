@@ -1,4 +1,4 @@
-from linked_list.linked_list import LinkedList, Node, zip_lists
+from code_challenges.linked_list.linked_list import LinkedList, Node, zip_lists
 
 
 def test_node_instance():
