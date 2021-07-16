@@ -32,7 +32,7 @@ N/A
 
 ***[stack_queue_pseudo]***
 
-![stack_queue_pseudo](https://github.com/kevinhenry/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/img/stack-queue-pseudo.jpg)
+![stack_queue_pseudo](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/stack-queue-pseudo.jpg)
 
 ---
 
