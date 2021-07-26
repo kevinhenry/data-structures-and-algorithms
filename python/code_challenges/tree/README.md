@@ -6,11 +6,8 @@
 
 ---
 
-### Problem Domain
+## Features
 
-***[Problem Domain for the Code Challenge]***
-
-Problem Domain -
 ### Node
 - Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
 
