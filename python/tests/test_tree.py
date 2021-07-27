@@ -93,3 +93,18 @@ def test_post_order_traversal():
     actual = tree.post_order()
     expected = [4, 5, 2, 3, 1]
     assert actual == expected
+
+
+def test_finding_maximum_value():
+    tree = BinaryTree()
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(9)
+    tree.root.left.right = Node(12)
+    tree.root.left.right.left = Node(1)
+    tree.root.left.right.right = Node(3)
+    tree.root.right.right = Node(8)
+    tree.root.right.left = Node(10)
+    actual = tree.find_maximum_value()
+    expected = 12
+    assert actual == expected

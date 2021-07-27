@@ -68,6 +68,27 @@ class BinaryTree:
         traverse(self.root)
         return post_order_list
 
+    def find_maximum_value(self):
+        if self.root is None:
+            return "Empty Tree"
+
+        max_value = self.root.value
+
+        def traverse(root):
+            nonlocal max_value
+
+            if root.value > max_value:
+                max_value = root.value
+
+            if root.left:
+                traverse(root.left)
+
+            if root.right:
+                traverse(root.right)
+
+        traverse(self.root)
+        return max_value
+
 
 class BinarySearchTree(BinaryTree):
     """
