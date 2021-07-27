@@ -41,7 +41,7 @@
 - [x] Can successfully return a collection from a postorder traversal
 
 ---
-# Code Challenge 15
+# Code Challenge 16
 
 ## Find the Maximum Value in a Binary Tree
 
