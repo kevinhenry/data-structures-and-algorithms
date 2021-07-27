@@ -41,12 +41,33 @@
 - [x] Can successfully return a collection from a postorder traversal
 
 ---
+# Code Challenge 15
 
+## Find the Maximum Value in a Binary Tree
 
+*Author: Kevin Henry with Anthony W and Tony R*
+
+# Challenge Summary
+Write the following method for the Binary Tree class
+
+find maximum value
+ - Arguments: none
+ - Returns: number
+
+Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Whiteboard Process
+![tree-max](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/tree-max.jpg)
+
+## Approach & Efficiency
+
+Big O
+*Time: O(n) Space: O(1)
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
 
 ---
-
-
 
 ---
 
