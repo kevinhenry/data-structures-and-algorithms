@@ -28,7 +28,9 @@
 
 [Tree](code_challenges/tree/README.md)
 
-[Tree-Max](code_challenges/tree/README.md)
+[Tree Max](code_challenges/tree/README.md)
+
+[Tree Breadth First](code_challenges/tree_breadth_first/README.md)
 
 ### Folder and Challenge Setup
 
