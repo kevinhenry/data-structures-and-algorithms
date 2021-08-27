@@ -17,7 +17,6 @@
 | Input | Expected Output |
 | :----------- | :----------- |
 
-
 ---
 
 ### Big O
