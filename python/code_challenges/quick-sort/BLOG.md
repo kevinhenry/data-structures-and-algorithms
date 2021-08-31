@@ -34,87 +34,14 @@ ALGORITHM Swap(arr, i, low)
     arr[low] <-- temp
 ```
 
-## Algorithm
+## Intro
 
-     `InsertionSort(int[] arr)`
-*Define a function that takes in a list of integers*
+Quick sort is a devide and conguer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot. The key process in quick-sort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in a sorted array and put all smaller elements before x, and put all greater valued elemtns after x.
 
-    `FOR i = 1 to arr.length`
-*Starts a for loop that will loop through the array starting at index 1 and going the length of the array*
-
-      `int j <-- i - 1`
-*Creates the variable "j" and assigns it the value of 1*
-
-      `int temp <-- arr[i]`
-*Creates a temp variable and assigns it the value of the array  at index "i"*
-
-      `WHILE j >= 0 AND temp < arr[j]`
-*Creates a while loop that continues to run while variable "j" is greater than or equal to 0 AND the temp variable is less than the array at index "j"*
-
-      `arr[j + 1] <-- arr[j]`
-*Temp variable is less than array at index "j" and moves 1 index to the right in order for array to sort properly*
-
-      `j <-- j - 1`
-*Decrements variable "j"*
-
-      `arr[j + 1] <-- temp`
-*Assigns the temp variable at array at index j+1*
-
-*Continues until it goes through the whole array
 
 ## Trace
 
-Sample Array: [8, 4, 23, 42, 16, 15]
-
-
-###
-[8, 4, 23, 42, 16, 15]
-15 Pivot point
-8 < 15
-Nothing happens
-4 < 15
-Nothing happens
-23 > 15
-Swap
-15 < 23
-
-[8, 4, 15, 42, 16, 23]
-15 Pivot point
-15 < 42
-Nothing happens
-15 < 16
-*15 Locked*
-
-[8, 4, 15, 42, 16, 23]
-4 Pivot point
-8 > 4
-Swap
-Compare 4 </> 4
-*4 Locked*
-Compare 8 </> 8
-*8 Locked*
-
-[4, 8, 15, 42, 16, 23]
-
-[4, 8, 15][42, 16, 23]
-23 Pivot point
-42 > 23
-Swap
-23 < 42
-23 > 16
-Swap
-16 < 23, 42
-*23 Locked*
-Compare 16 </> 16
-*16 Locked*
-Compare 42 </> 42
-*42 Locked*
-
-
-[4, 8, 15, 16, 23, 42]
->>
-
->>>>
+![quick-sort](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/quick-sort.jpg)
 
 
 ## Code
@@ -147,4 +74,3 @@ quick_sort(arr, 0, len(arr) -1)
 
 print(f'Sorted Array: {arr}')
 ```
-          
