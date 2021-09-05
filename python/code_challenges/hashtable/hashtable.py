@@ -4,7 +4,37 @@ from code_challenges.linked_list.linked_list import LinkedList  # DANGER: user Y
 class Hashtable:
     def __init__(self, size=1024):
         self.size = size
-        self.buckes = [None] * self.size
+        self.buckets = [None] * self.size
+
+    def add(self, key, value):
+        index = self.hash(key)
+        if not self.buckets[index]:
+            self.buckets[index] = LinkedList()
+
+        bucket = self.buckets[index]
+        bucket.insert([key, value])
+
+    def get(self, key):
+        request_key = self.hash(key)
+        if self.buckets[request_key]:
+            current = self.buckets[request_key].head
+            while current:
+                if current.data[0] == key:
+                    return current.data[1]
+                current = current.next
+        else:
+            return None
+
+    def contains(self, key):
+        request_key = self.hash(key)
+        if self.buckets[request_key]:
+            current = self.buckets[request_key].head
+            while current:
+                if current.data[0] == key:
+                    return True
+                current = current.next
+        else:
+            return False
 
     def hash(self, key):
         sum = 0
@@ -17,14 +47,3 @@ class Hashtable:
         index = product % self.size
 
         return index
-
-    def add(self, key, value):
-
-        index = self.hash(key)
-
-        if not self.buckets[index]:
-            self.buckets[index] = LinkedList()
-
-        bucket = self.buckets[index]
-
-        bucket.insert([key, value])
