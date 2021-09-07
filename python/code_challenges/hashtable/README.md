@@ -37,30 +37,6 @@ Write tests to prove the following functionality:
 [ ] Successfully retrieve a value from a bucket within the hashtable that has a collision
 [ ] Successfully hash a key to an in-range value
 
-### Problem Domain
-***[Problem Domain for the Code Challenge]***
-
----
-
-### Inputs and Expected Outputs
-
-| Input | Expected Output |
-
----
-
-### Big O
-
-| Time | Space |
-| :----------- | :----------- |
-| O(n) | O(1) |
-
----
-
-### Whiteboard Visual
-***[Hash Tables]***
-
-![quick-sort](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/hash-tables.jpg)
-
 ---
 
 ### Credit & Collaboration
