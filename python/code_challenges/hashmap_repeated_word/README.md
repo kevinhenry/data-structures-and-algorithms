@@ -1,6 +1,6 @@
 # Daily Code Challenge README
 
-## Implementation: Hash Tables
+## Implementation: Hashmap Repeated Word
 *Author: Kevin Henry with Anthony Williams and Tony Regalado
 
 ---
@@ -36,6 +36,13 @@ Write tests to prove the following functionality:
 [ ] Successfully handle a collision within the hashtable
 [ ] Successfully retrieve a value from a bucket within the hashtable that has a collision
 [ ] Successfully hash a key to an in-range value
+
+---
+
+### Whiteboard Visual
+***[Hashmap Repeated Word]***
+
+![hashmap-repeated-word](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/hashmap_repeated_word.jpg)
 
 ---
 
