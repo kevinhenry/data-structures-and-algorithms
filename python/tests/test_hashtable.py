@@ -43,13 +43,20 @@ def test_add():
     # print(bucket)
 
 
-def test_add_same_keys():
+# def test_add_same_keys():
+#     hashtable = Hashtable()
+#     hashtable.add("a", "apple")
+#     hashtable.add("a", "alfalfa")
+#     index = hashtable.hash("a")
+#     bucket = hashtable.buckets[index]
+#     assert bucket.head.value == "???"
+
+
+def test_get():
     hashtable = Hashtable()
-    hashtable.add("a", "apple")
-    hashtable.add("a", "alfalfa")
-    index = hashtable.hash("a")
-    bucket = hashtable.buckets[index]
-    assert bucket.head.value == "???"
+    hashtable.add("spam", "eggs")
+    find = hashtable.get("spam")
+    assert find == "eggs"
 
 
 def test_key_retreive_value():
