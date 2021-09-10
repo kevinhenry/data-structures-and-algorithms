@@ -1,7 +1,7 @@
 # Daily Code Challenge README
 
 ## Implementation: Hashmap Repeated Word
-*Author: Kevin Henry with Anthony Williams and Tony Regalado
+*Author: Kevin Henry with Anthony Williams, Tony Regalado, and Garfield Grant
 
 ---
 
