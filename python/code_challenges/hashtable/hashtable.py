@@ -15,35 +15,39 @@ class Hashtable:
         bucket.insert([key, value])
 
     def get(self, key):
-        request_key = self.hash(key)
-        if self.buckets[request_key]:
-            current = self.buckets[request_key].head
-            while current:
-                if current.data[0] == key:
-                    return current.data[1]
-                current = current.next
-        else:
+        index = self.hash(key)
+        if self.buckets[index] is None:
             return None
 
+        current = self.buckets[index].head
+
+        while current:
+            if current.value[0] == key:
+                return current.value[1]
+            current = current.next
+
+        return None
+
     def contains(self, key):
-        request_key = self.hash(key)
-        if self.buckets[request_key]:
-            current = self.buckets[request_key].head
-            while current:
-                if current.data[0] == key:
-                    return True
-                current = current.next
-        else:
+        index = self.hash(key)
+        if self.buckets[index] is None:
             return False
 
+        current = self.buckets[index].head
+
+        while current:
+            if current.value[0] == key:
+                return True
+            current = current.next
+        return False
+
     def hash(self, key):
-        sum = 0
+        index = 0
         for char in key:
-            numeric_value = ord(char)
-            sum += numeric_value
+            index += ord(char)
 
-        product = sum * 599
+        index *= 599
 
-        index = product % self.size
+        index = index % self.size
 
         return index
