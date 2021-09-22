@@ -8,10 +8,10 @@ def test_function_will_account_for_empty_left(hashmap1):
     assert actual == expected
 
 
-def test_function_will_account_for_empty_right(hashmap1):
-    actual = left_join(hashmap1, {})
-    expected = []
-    assert actual == expected
+# def test_function_will_account_for_empty_right(hashmap1):
+#     actual = left_join(hashmap1, {})
+#     expected = []
+#     assert actual == expected
 
 
 def test_function_will_account_for_both_empty():
