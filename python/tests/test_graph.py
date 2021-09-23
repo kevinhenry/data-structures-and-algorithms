@@ -1,5 +1,28 @@
 import pytest
-from code_challenges.graph.graph import Vertex, Graph
+from code_challenges.graph.graph import Graph, Edge, Vertex
+
+
+@pytest.fixture(scope="function")
+def test_graph():
+    graph = Graph()
+    a = graph.add_node("a")
+    b = graph.add_node("b")
+    c = graph.add_node("c")
+    d = graph.add_node("d")
+    e = graph.add_node("e")
+    f = graph.add_node("f")
+    g = graph.add_node("g")
+    h = graph.add_node("h")
+    graph.add_edge(a, b)
+    graph.add_edge(a, c)
+    graph.add_edge(b, d)
+    graph.add_edge(c, d)
+    graph.add_edge(a, e)
+    graph.add_edge(e, f)
+    graph.add_edge(e, g)
+    graph.add_edge(f, h)
+
+    return graph
 
 
 def test_add_vertex_pass():
@@ -70,12 +93,12 @@ def test_one_node_one_edge_end():
 
 # All appropriate neighbors can be retrieved from the graph
 # Neighbors are returned with the weight between nodes included
-def test_get_neighbors():
+def test_get_neighbor():
     graph = Graph()
     a = graph.add_node("a")
     b = graph.add_node("b")
     graph.add_edge(a, b)
-    actual = graph.get_neighbors("a")
+    actual = graph.get_neighbor("a")
     expected = ["b", 1]
     assert actual == expected
 
@@ -97,3 +120,15 @@ def test_add_size_fail():
     expected = 3
     actual = graph.size()
     assert actual != expected
+
+
+def test_breadth_first(test_graph):
+    assert test_graph.breadth_first("a") == ["a", "b", "c", "e", "d", "f", "g", "h"]
+
+
+def test_breadth_first_fail(test_graph):
+    try:
+        test_graph.breadth_first("i")
+        assert False
+    except KeyError:
+        assert True
