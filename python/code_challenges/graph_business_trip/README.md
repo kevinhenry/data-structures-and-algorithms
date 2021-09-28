@@ -4,71 +4,15 @@
 *Author: Kevin Henry with Anthony Williams and Tony Regalado
 
 ---
+Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
 
 ## Feature Tasks:
 
-Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
+Write a function called business trip
+Arguments: graph, array of city names
+Return: cost or null
+Determine whether the trip is possible with direct flights, and how much it would cost.
 
-- add node
-    - Arguments: value
-    - Returns: The added node
-    - Add a node to the graph
-
-- add edge
-    - Arguments: 2 nodes to be connected by the edge, weight (optional)
-    - Returns: nothing
-    - Adds a new edge between two nodes in the graph
-    - If specified, assign a weight to the edge
-    - Both nodes should already be in the Graph
-
-- get nodes
-    - Arguments: none
-    - Returns all of the nodes in the graph as a collection (set, list, or similar)
-
-- get neighbors
-    - Arguments: node
-    - Returns a collection of edges connected to the given node
-        - Include the weight of the connection in the returned collection
-
-- size
-    - Arguments: none
-    - Returns the total number of nodes in the graph
-
-
-### NOTES:
-
-
-## Structure and Testing
-
-Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
-
-Write tests to prove the following functionality:
-
-[x] 1. Node can be successfully added to the graph
-[x] 2. An edge can be successfully added to the graph
-[x] 3. A collection of all nodes can be properly retrieved from the graph
-[x] 4. All appropriate neighbors can be retrieved from the graph
-[x] 5. Neighbors are returned with the weight between nodes included
-[x] 6. The proper size is returned, representing the number of nodes in the graph
-[x] 7. A graph with only one node and edge can be properly returned
-[x] 8. An empty graph properly returns null
-
-Ensure your tests are passing before you submit your solution.
-
----
-
-# Code Challenge: Class 36: Graph Breadth First
-
-## Implement a breadth-first traversal on a graph
-
-## Feature Tasks:
-
-Write the following method for the Graph class:
-
-- breadth first
-- Arguments: Node
-- Return: A collection of nodes in the order they were visited.
-- Display the collection
 
 ## Structure and Testing
 
@@ -90,6 +34,14 @@ Ensure your tests are passing before you submit your solution.
 
 ### Change Log
 ***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***
+
+---
+
+### Whiteboard Visual
+***[Graph Business Trip]***
+
+![Graph Business Trip](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/graph_business_trip.jpg)
+
 
 ---
 
