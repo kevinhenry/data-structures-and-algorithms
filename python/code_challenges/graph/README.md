@@ -35,6 +35,8 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
     - Returns the total number of nodes in the graph
 
 
+CC 38
+
 - depth first
     - Arguments: Node (Starting point of search)
     - Return a collection of node in the pre-order depth-first traversal order
