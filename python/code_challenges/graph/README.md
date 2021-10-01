@@ -40,7 +40,7 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
     - Return a collection of node in the pre-order depth-first traversal order
     - Display the collection
 
-[Graph-Depth-first](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/graph_depth_first.jpg)
+[Graph-Depth-first](https://github.com/kevinhenry/data-structures-and-algorithms/blob/main/python/code_challenges/img/depth_first_traversal.jpg)
 
 ### NOTES:
 
